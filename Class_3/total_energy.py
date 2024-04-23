@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 L = 30
-Iteration_num = 10000
+Iteration_num = 1000
 
 def get_initial_grid(L:int = L) -> np.asarray:
     grid = np.zeros((L,L,L))
@@ -62,7 +62,7 @@ plt.figure(figsize=(15, 15), dpi=100)
 plt.scatter(iter_num_list, total_energy_list, c='blue', s=100)
 plt.xlabel("Iter", fontdict={'size': 16})
 plt.ylabel("Total Energy/(eV)", fontdict={'size': 16})
-plt.title("Class 3 homework", fontdict={'size': 20})
+plt.title("Total interation = 1000", fontdict={'size': 20})
 plt.savefig("./total_energy.png", bbox_inches='tight')
 
 average_energy = np.average(total_energy_list)
